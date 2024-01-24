@@ -1,0 +1,47 @@
+ <p>form works!</p>
+
+ <form action="#">
+    <div>
+        <label>Name :</label>
+        <input type="text" [(ngModel)]="registerObj.Name" name="Name" required>
+    </div>
+    <br/>
+    <br/>
+    <div>
+        <label>Email :</label>
+        <input type="email" [(ngModel)]="registerObj.Email" name="Email">
+    </div>
+    <br/>
+    <br/>
+    <div>
+        <label>User Name :</label>
+        <input type="text" [(ngModel)]="registerObj.UserName" name="UserName">
+    </div>
+    <br/>
+    <br/>
+    <div>
+        <label>Password :</label>
+        <input type="text" [(ngModel)]="registerObj.password" name="Password">
+    </div>
+    <br/>
+    <br/>
+    <button type="button" (click)="onSignUp()">Sign Up</button>
+</form> 
+
+<!-- <h1> Angular 17 reactive contact form example </h1>
+
+<form [formgroup]="signUpForm" (ngSubmit)="onSubmit()">
+  <input type = "text" name = "Name" placeholder = "Enter name" formControlName="Name" >
+  <br/>
+
+  <input type = "email" name = "Email" placeholder = "Your email" formControlName="Email" >
+  <br/>
+
+  <input type = "text" name = "Username" placeholder = "Enter User name" formControlName="UserName" >
+  <br/>
+
+  <input type = "text" name = "Password" placeholder = "Enter Password" formControlName="Password" >
+  <br/>
+
+  <button type="submit">Sign Up</button>
+</form> -->
